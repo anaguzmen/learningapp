@@ -18,7 +18,7 @@ public class IndexModel : PageModel
     public void OnGet()
     {
        
-        string connectionString = _configuration.GetConnectionString("MySQL_ConnectionString")!;
+        string connectionString = _configuration.GetConnectionString("MySQLConnectionString")!;
         var sqlConnection = new MySqlConnection(connectionString);
         sqlConnection.Open();
 
